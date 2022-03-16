@@ -1,22 +1,49 @@
 #include <stdio.h>
 
-/**
-  * main - Prints score letters of alphabet
-  *
-  * Return: Always (Success)
-  */
- int main(void)
- {
- 	char c;
-
-	for (c = 'a'; c <= 'z'; c++)
+int main(void)
+{
+    char ch = 'a';
+	while(ch <= 'z')
 	{
-		if (c != 'e' && c != 'q')
+		if (ch != 'e' && ch != 'q')
 		{
-			putchar(c);
+			putchar(ch);
+		}
+		ch++;
+	}
+	putchar('\n');
+
+    return 0;
+}
+
+#include <stdio.h>
+
+int main(void)
+{
+    
+	for (char ch = 'a'; ch <= 'z'; ch++)
+	{
+		if (ch != 'e' && ch != 'q')
+		{
+			putchar(ch);
 		}
 	}
+	putchar('\n');
 
-	putchar("\n");
-	return (0);
+    return 0;
+}
+
+int main(void)
+{
+    
+	for (char ch ='a'; ch <= 'z'; ch++)
+	{
+		if (ch == 'e' || ch == 'q')
+		    ch++;
+		putchar(ch);
+		
+	}
+	putchar('\n');
+
+    return 0;
 }
