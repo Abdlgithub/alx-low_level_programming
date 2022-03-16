@@ -1,19 +1,22 @@
 #include <stdio.h>
 
 /**
- *main - Prints decimal digits
- *
- *Description: Prints decimal digits followed by a new line
- *Return: 0
-*/
-int main(void)
-{
-	int i;
+  * main - Prints score letters of alphabet
+  *
+  * Return: Always (Success)
+  */
+ int main(void)
+ {
+ 	char c;
 
-	for (i = 0; i <= 9; i++)
+	for (c = 'a'; c <= 'z'; c++)
 	{
-		printf("%d", i);
+		if (c != 'e' && c != 'q')
+		{
+			putchar(c);
+		}
 	}
-	putchar('\n');
+
+	putchar("\n");
 	return (0);
 }
