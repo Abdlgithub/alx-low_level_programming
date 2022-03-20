@@ -1,49 +1,22 @@
 #include <stdio.h>
 
-int main(void)
-{
-    char ch = 'a';
-	while(ch <= 'z')
-	{
-		if (ch != 'e' && ch != 'q')
-		{
-			putchar(ch);
-		}
-		ch++;
-	}
-	putchar('\n');
-
-    return 0;
-}
-
-#include <stdio.h>
+/**
+ * main - Entry Point
+ * Return: return 0 as success
+ */
 
 int main(void)
 {
-    
-	for (char ch = 'a'; ch <= 'z'; ch++)
+	char letter = 'a';
+
+	while (letter <= 'z')
 	{
-		if (ch != 'e' && ch != 'q')
-		{
-			putchar(ch);
-		}
+		if (letter != 'e' && letter != 'q')
+			putchar(letter);
+		letter++;
 	}
+
 	putchar('\n');
 
-    return 0;
-}
-
-int main(void)
-{
-    
-	for (char ch ='a'; ch <= 'z'; ch++)
-	{
-		if (ch == 'e' || ch == 'q')
-		    ch++;
-		putchar(ch);
-		
-	}
-	putchar('\n');
-
-    return 0;
+	return (0);
 }
