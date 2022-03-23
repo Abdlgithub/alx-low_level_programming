@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 /**
  *_strncpy-copy from src to dest.
  *@dest:destination string.
