@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 /**
  *_strcat-concatenates a string.
  *@dest:destination string.
