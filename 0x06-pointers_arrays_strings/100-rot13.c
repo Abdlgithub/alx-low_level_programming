@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 #include <stdio.h>
 
 /**
@@ -7,11 +7,10 @@ include "main.h"
  *
  * Return: *s
  */
-
 char *rot13(char *s)
 {
-	int i;
 	int j;
+	int i;
 	char data1[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char datarot[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
