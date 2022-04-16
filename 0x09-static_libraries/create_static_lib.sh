@@ -1,3 +1,3 @@
 #!/bin/bash
-gcc -c*.car
+gcc -wall -pedatic -werror -wxtra -c *.c
 ar -rc liball.a *.o
